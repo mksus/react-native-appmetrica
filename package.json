@@ -1,6 +1,6 @@
 {
   "name": "react-native-appmetrica",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React Native bridge to the AppMetrica on both iOS and Android",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doochik/react-native-appmetrica.git"
+    "url": "git+https://github.com/mksus/react-native-appmetrica.git"
   },
   "keywords": [
     "react-native",
@@ -21,9 +21,9 @@
   "author": "Aleksei Androsov <doochik@ya.ru>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/doochik/react-native-appmetrica/issues"
+    "url": "https://github.com/mksus/react-native-appmetrica/issues"
   },
-  "homepage": "https://github.com/doochik/react-native-appmetrica#readme",
+  "homepage": "https://github.com/mksus/react-native-appmetrica#readme",
   "peerDependencies": {
     "react-native": ">=0.45"
   },

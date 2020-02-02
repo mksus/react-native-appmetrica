@@ -28,6 +28,7 @@
 		59FB35C21F6FA64700A6608F /* libRCTAppMetrica.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTAppMetrica.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FB35C51F6FA64700A6608F /* RCTAppMetrica.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTAppMetrica.h; sourceTree = "<group>"; };
 		59FB35C61F6FA64700A6608F /* RCTAppMetrica.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTAppMetrica.m; sourceTree = "<group>"; };
+		DDA13DDC23671A54004FD08B /* libReact-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 			children = (
 				59FB35C41F6FA64700A6608F /* RCTAppMetrica */,
 				59FB35C31F6FA64700A6608F /* Products */,
+				DDA13DDB23671A54004FD08B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +66,14 @@
 				59FB35C61F6FA64700A6608F /* RCTAppMetrica.m */,
 			);
 			path = RCTAppMetrica;
+			sourceTree = "<group>";
+		};
+		DDA13DDB23671A54004FD08B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDA13DDC23671A54004FD08B /* libReact-Core.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +116,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 59FB35B91F6FA64700A6608F;
@@ -171,6 +182,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -213,6 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -228,9 +241,7 @@
 					"$(PROJECT_DIR)/../../../../ios/Frameworks",
 					"$(PROJECT_DIR)/../../../../ios/Pods/**",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../../../../ios/Pods/**",
-				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../../../ios/Pods/Headers/Public/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -245,9 +256,7 @@
 					"$(PROJECT_DIR)/../../../../ios/Frameworks",
 					"$(PROJECT_DIR)/../../../../ios/Pods/**",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../../../../ios/Pods/**",
-				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../../../ios/Pods/Headers/Public/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -279,3 +288,4 @@
 	};
 	rootObject = 59FB35BA1F6FA64700A6608F /* Project object */;
 }
+
