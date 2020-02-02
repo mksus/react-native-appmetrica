@@ -1,8 +1,4 @@
-[![Build Status](https://travis-ci.org/doochik/react-native-appmetrica.svg?branch=master)](https://travis-ci.org/doochik/react-native-appmetrica)
-[![NPM version](https://badge.fury.io/js/react-native-appmetrica.svg)](https://www.npmjs.com/package/react-native-appmetrica)
-
-
-# react-native-appmetrica
+# react-native-appmetrica fork react native 0.61
 This is fork for [React Native AppMetrica](https://github.com/yandexmobile/react-native-appmetrica).
 Since RN linking has changed in 0.60 and 0.61 versions, original appmetrica causes build fails.
 This fork with installation notes below works for RN 0.61.5
