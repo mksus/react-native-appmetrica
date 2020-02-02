@@ -3,18 +3,33 @@
 
 
 # react-native-appmetrica
-React Native bridge to the [AppMetrica](https://appmetrica.yandex.com/) on both iOS and Android.
+This is fork for [React Native AppMetrica](https://github.com/yandexmobile/react-native-appmetrica).
+Since RN linking has changed in 0.60 and 0.61 versions, original appmetrica causes build fails.
+This fork with installation notes below works for RN 0.61.5
 
-## Installation
+## Installation notes
 
-1. **Only for iOS**: [setup AppMetrica](https://tech.yandex.com/appmetrica/).
-`YandexMobileMetrica.framework` should be placed at `<project_dir>/ios/` or `<project_dir>/ios/Frameworks/`.
-Otherwise you'll get build error.
-2. `npm install --save react-native-appmetrica`
-3. `react-native link react-native-appmetrica`
-
-**iOS notice**: If you build failed after installing SDK and `react-native-appmetrica`
-make sure `YandexMobileMetrica.framework` and `libRCTAppMetrica.a` are included at Build Phase -> Link Binary With Libraries
+#### yarn
+1. Add "react-native-appmetrica": "https://github.com/mksus/react-native-appmetrica#master to your package.json dependencies
+2. yarn install (if you already had appmetrica installed, remove node_modules and yarn.lock to update package contents)
+#### iOS
+3. Add following line to ios/Podfile dependencies. Make sure you have ```use_frameworks!``` line in your Podfile 
+[official instructions](https://tech.yandex.com/appmetrica/doc/mobile-sdk-dg/tasks/ios-quickstart-docpage/)
+```
+pod 'YandexMobileMetrica/Dynamic', '3.9.2'
+``` 
+4. 
+``` 
+cd ios; pod install
+```
+#### Android
+5. Add following line to your android/app/build.gradle dependencies 
+[official instruction](https://tech.yandex.com/appmetrica/doc/mobile-sdk-dg/concepts/android-initialize-docpage/) 
+(react-native-appmetrica is initialized from you JS code, so you only need Step 1)
+```
+    implementation 'com.yandex.android:mobmetricalib:3.8.0'
+```
+6. ```react-native run-android``` to run debug version or ```cd android && ./gradlew clean && ./gradlew assembleRelease``` to build apk
 
 ## Example
 
