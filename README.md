@@ -9,8 +9,8 @@ This fork with installation notes below works for RN 0.61.5
 1. Add "react-native-appmetrica": "https://github.com/mksus/react-native-appmetrica#master to your package.json dependencies
 2. yarn install (if you already had appmetrica installed, remove node_modules and yarn.lock to update package contents)
 #### iOS
-3. Add following line to ios/Podfile dependencies. Make sure you have ```use_frameworks!``` line in your Podfile 
-[official instructions](https://tech.yandex.com/appmetrica/doc/mobile-sdk-dg/tasks/ios-quickstart-docpage/)
+3. Add following line to ios/Podfile dependencies. Make sure you have ```use_frameworks!``` line in your Podfile. 
+[_official instructions_](https://tech.yandex.com/appmetrica/doc/mobile-sdk-dg/tasks/ios-quickstart-docpage/)
 ```
 pod 'YandexMobileMetrica/Dynamic', '3.9.2'
 ``` 
@@ -19,8 +19,8 @@ pod 'YandexMobileMetrica/Dynamic', '3.9.2'
 cd ios; pod install
 ```
 #### Android
-5. Add following line to your android/app/build.gradle dependencies 
-[official instruction](https://tech.yandex.com/appmetrica/doc/mobile-sdk-dg/concepts/android-initialize-docpage/) 
+5. Add following line to your android/app/build.gradle dependencies.
+[_official instruction_](https://tech.yandex.com/appmetrica/doc/mobile-sdk-dg/concepts/android-initialize-docpage/) 
 (react-native-appmetrica is initialized from you JS code, so you only need Step 1)
 ```
     implementation 'com.yandex.android:mobmetricalib:3.8.0'
