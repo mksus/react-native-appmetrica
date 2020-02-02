@@ -18,14 +18,14 @@
     "ios",
     "android"
   ],
-  "author": "Aleksei Androsov <doochik@ya.ru>",
+  "author": "Aleksei Androsov <doochik@ya.ru>, ZloyRob, mksus",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mksus/react-native-appmetrica/issues"
   },
   "homepage": "https://github.com/mksus/react-native-appmetrica#readme",
   "peerDependencies": {
-    "react-native": ">=0.45"
+    "react-native": ">=0.60"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.1",
